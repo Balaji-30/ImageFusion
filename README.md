@@ -3,7 +3,8 @@
 ImageFusion is a fullstack web application that combines multiple user-provided images (like people, backgrounds, and objects) into a single, coherent scene using AI. It uses OpenAI’s DALL·E for generation and CLIP for output evaluation.
 
 ---
-
+![ImageFusion Banner](./assets/ImageFusion.png)
+---
 ## Project Overview and Motivation
 
 **ImageFusion** is an AI-driven image composition tool that combines multiple user-provided images into a single cohesive scene.  
