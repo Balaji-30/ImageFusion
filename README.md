@@ -1,6 +1,5 @@
-![ImageFusion Banner](./assets/ImageFusion.png)
 <p align="center">
-  <img src="./assets/ImageFusion.png" alt="ImageFusion Banner" height="600">
+  <img src="./assets/ImageFusion.png" alt="ImageFusion Banner" height="400">
 </p>
 ---
 
