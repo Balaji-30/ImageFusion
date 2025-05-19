@@ -56,8 +56,10 @@ This metric, commonly referred to as the CLIP similarity score or Image-Text Rel
 - Images and prompts were sent to OpenAI's API without structured summarization.
 - Outputs were sometimes misaligned or hallucinated.
 - Trust was compromised due to under-specified prompts.
+<br>  
 
 ### Trust-Enhancing Changes in ImageFusion
+<br>
 
 | Area               | Modification Implemented                                                                 |
 |--------------------|-------------------------------------------------------------------------------------------|
@@ -65,8 +67,11 @@ This metric, commonly referred to as the CLIP similarity score or Image-Text Rel
 | **Prompt Engineering** | Strict instructions for "continuous single-scene generation with natural interactions" (no panels, no split layouts). |
 | **Model Usage**    | Integrated OpenAI Vision APIs thoughtfully, crafting prompts that tightly bind all user elements together. |
 | **Evaluation Metric** | Used CLIP (Contrastive Language–Image Pretraining) model to score the alignment between prompt and output. |
+<br>
 
 - With a more refined and carefully structured system prompt, the overall prompt quality significantly improved, leading to an even higher IRRS score. We were able to achieve an IRRS score of approximately 39, showcasing a substantial improvement in semantic alignment and image relevance. This indicates that thoughtful prompt engineering plays a critical role in enhancing the final output quality and model performance when generating images based on multi-image instructions.
+<br>
+
 ```python
 summarization_prompt = (
     "For each image: "
@@ -123,6 +128,7 @@ npm run dev
 - Random artifacts introduced.
 - Backgrounds mismatched.
 - People missing or distorted.
+<br>
 
 **After Improvements:**
 - All key elements appear in the correct context.
