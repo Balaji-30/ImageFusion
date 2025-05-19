@@ -1,24 +1,29 @@
-<p align="center">
-  <img src="./assets/ImageFusion.png" alt="ImageFusion Banner" height="400">
-</p>
----
+# ImageFusion
 
 ImageFusion is a fullstack web application that combines multiple user-provided images (like people, backgrounds, and objects) into a single, coherent scene using AI. It uses OpenAI’s DALL·E for generation and CLIP for output evaluation.
+
+---
+
+<p align="center">
+  <img src="./assets/ImageFusionCropped.PNG" alt="ImageFusion Banner">
+</p>
 
 ---
 
 ## Project Overview and Motivation
 
 **ImageFusion** is an AI-driven image composition tool that combines multiple user-provided images into a single cohesive scene.  
-Users provide:
-- Images of people
-- A background image
-- A prop image
+### 🔹 Users provide:
+- One or more **person** images
+- A **background** image
+- A **prop** image
+- An optional **instructional prompt**
 
-The system then:
-- Uses OpenAI’s vision-language model to generate a new, contextually appropriate scene.
-- Ensures that the people, background, and props are meaningfully blended.
-- Uses Dall-E 3 to generate a new image after blending all the images.
+### 🔹 The system then:
+1. **Extracts visual descriptions** of each input using OpenAI’s vision-language model.
+2. **Combines them into a single scene prompt** tailored for image generation.
+3. **Generates a new image** using DALL·E 3 that realistically blends people, background, and props.
+4. **Evaluates the result** using **CLIP-based similarity scoring**, comparing the final image with the inputs and prompt to assess semantic alignment and trustworthiness.
 
 ---
 
