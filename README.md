@@ -1,4 +1,7 @@
 ![ImageFusion Banner](./assets/ImageFusion.png)
+<p align="center">
+  <img src="./assets/ImageFusion.png" alt="ImageFusion Banner" height="600">
+</p>
 ---
 
 ImageFusion is a fullstack web application that combines multiple user-provided images (like people, backgrounds, and objects) into a single, coherent scene using AI. It uses OpenAI’s DALL·E for generation and CLIP for output evaluation.
